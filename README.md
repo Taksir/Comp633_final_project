@@ -75,8 +75,8 @@ g++ -std=c++11 -Ofast -fopenmp -o main main.cpp ;
 ```
 
 # Experiments
-In all experiments, only the currently experimented parameter changes, the rest is the same as those used in the base command. Also, make sure that you have atleast around 4
-GB free ram. Otherwise, virtual memory execution will make it very slow. 
+In all experiments, only the currently experimented parameter changes, the rest is the same as those used in the base command. Also, make sure that you have atleast around 6
+GB free ram (and 4GB local disk to store the array data). Otherwise, virtual memory execution will make it very slow. 
 - Base command
 ```
 icpc -std=c++11 -O2 -fopenmp -o main main.cpp ;
