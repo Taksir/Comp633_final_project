@@ -1,0 +1,6 @@
+1. Generate Random LCP
+2. Read the Random LCP
+3. Vectorize the Random LCP (sequential vs parallel)
+4. Count Kmers that appear once (sequential vs parallel)
+5. Count Kmers that appear once and twice (sequential vs parallel)
+6. Count Kmers that appear once and twice + obtain once-Kmer indices (sequential vs parallel)
