@@ -72,7 +72,8 @@ icpc -std=c++11 -Ofast -fopenmp -o main main.cpp ;
 ```
 
 # Experiments
-In all experiments, only the currently experimented parameter changes, the rest is the same as those used in the base command.
+In all experiments, only the currently experimented parameter changes, the rest is the same as those used in the base command. Also, make sure that you have atleast around 4
+GB free ram. Otherwise, virtual memory execution will make it very slow. 
 - Base command
 ```
 icpc -std=c++11 -O2 -fopenmp -o main main.cpp ;
@@ -94,11 +95,8 @@ icpc -std=c++11 -O2 -fopenmp -o main main.cpp ;
 
 
 # TODO
-## countTotalUniqueKmers()
-- [ ] Sequential version in C
-- [ ] Parallel version in C with OpenMP
-- [ ] Compare versions and analyze the speedup
-## count_1_Plus_FrequencyKmers()
-- [ ] Sequential version in C
-- [ ] Parallel version in C with OpenMP
-- [ ] Compare versions and analyze the speedup
+## CUDA Implementation
+- [ ] Rewrite using CUDA and analyze the speedup
+## Implementation of parallel getIndicesofValidKmers
+- [ ] Analyze speedup with OpenMp
+- [ ] Analyze speedup with CUDA
