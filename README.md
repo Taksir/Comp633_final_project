@@ -61,7 +61,7 @@ def get_indices_of_noisy_Kmers_appearing_once(Vec, K):
 g++ -o Generate_Random_LCP Generate_Random_LCP.cpp
 ./Generate_Random_LCP <number-of-data-points>
 ```
-2. Process data. For example, with Count_Zeros:
+2. Process data. For example, with main:
 ```
 icpc -std=c++11 -Ofast -fopenmp -o main main.cpp ;
 ./main <number-of-data-points> <number-of-threads>;
