@@ -26,15 +26,14 @@ The LCP array above will be now: (1, 1, 0, 0, 0, 1, 0, 0)
 Simply count the zeros to get the number of Kmers.
 ```
 def CountNumberofKmers(array LCP):
-	do
-		for each element, e in LCP: // divided equally among the processors
-			if e >= 45:
-				temp_LCP[index of e] = 1
-			else:
-				temp_LCP[index of e] = 0
-		for each element, e in temp_LCP: // divided equally among the processors
-			use count the number of zeros locally and then add them parallely to get the final count of Kmers
-	end
+
+	for each element, e in LCP: // divided equally among the processors
+		if e >= 45:
+			temp_LCP[index of e] = 1
+		else:
+			temp_LCP[index of e] = 0
+	for each element, e in temp_LCP: // divided equally among the processors
+		use count the number of zeros locally and then add them parallely to get the final count of Kmers
 ```
 Now, to count the number of kmers that appear once, we observe that a Kmer appearing only once has a 0 at its index, and is preceded by another 0. Such pattern is impossible to 
 appear elsewhere.
